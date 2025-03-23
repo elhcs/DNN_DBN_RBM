@@ -70,7 +70,7 @@ Le DBN est constitué de RBM empilées et inclut :
 - Propagation avant  
 - Fonctions de modèle génératif  
 
-![Erreurs d'entraînement DBN](dbn_training_errors.png)  
+![Erreurs d'entraînement DBN](./results/dbn_training_errors.png)  
 *Figure 1 : Erreurs d'entraînement lors du pré-entraînement du DBN, montrant la diminution de l'erreur de reconstruction au fil des époques.*  
 
 ### Implémentation des DNN  
@@ -80,7 +80,7 @@ Le DNN repose sur l’architecture du DBN avec :
 - Rétropropagation pour l'affinage supervisé  
 - Fonctions de mesure des erreurs  
 
-![Pertes d'entraînement DNN](dnn_training_losses.png)  
+![Pertes d'entraînement DNN](./results/dnn_training_losses.png)  
 *Figure 2 : Comparaison des pertes d'entraînement entre DNN pré-entraînés et initialisés aléatoirement, montrant une convergence plus rapide et une perte finale plus faible avec le pré-entraînement.*  
 
 ## Résultats Expérimentaux  
@@ -95,7 +95,7 @@ on compare des réseaux avec un nombre variable de couches cachées (de 1 à 4),
 - L’avantage du pré-entraînement est plus marqué avec l'augmentation de la profondeur  
 - Au-delà de 3 couches, la performance se dégrade en raison du problème du gradient évanescent  
 
-![Expérience sur la profondeur du réseau](experiment_network_depth.png)  
+![Expérience sur la profondeur du réseau](./results/experiment_network_depth.png)  
 *Figure 3 : Précision en fonction de la profondeur du réseau. L’écart de performance augmente avec la profondeur.*  
 
 ### 2. Effet de la Taille des Couches Cachées  
@@ -106,7 +106,7 @@ on teste différentes tailles de couches cachées (100, 300, 500, 700 neurones) 
 - La performance s’améliore jusqu’à environ 500 neurones, puis se stabilise  
 - Les réseaux initialisés aléatoirement bénéficient davantage d’une augmentation de la taille des couches que les réseaux pré-entraînés  
 
-![Expérience sur la taille des couches](experiment_hidden_size.png)  
+![Expérience sur la taille des couches](./results/experiment_hidden_size.png)  
 *Figure 4 : Précision en fonction de la taille des couches cachées.*  
 
 ### 3. Effet de la Taille du Jeu de Données  
@@ -117,7 +117,7 @@ Nous avons varié le nombre d'exemples d'entraînement (1000, 3000, 7000, 10000,
 - L'écart entre les réseaux pré-entraînés et aléatoires diminue avec l'augmentation des données  
 - Avec l’ensemble complet, le pré-entraînement offre toujours un léger avantage  
 
-![Expérience sur la taille du jeu de données](experiment_data_size.png)  
+![Expérience sur la taille du jeu de données](./results/experiment_data_size.png)  
 *Figure 5 : Précision en fonction de la taille du jeu de données.*  
 
 ## Analyse des Résultats  
