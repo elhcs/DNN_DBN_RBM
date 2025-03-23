@@ -1,0 +1,25 @@
+Experimental Results
+===================
+
+1. Effect of Network Depth
+-------------------------
+  1 layers: Pretrained = 0.0323, Random = 0.0335
+  2 layers: Pretrained = 0.0260, Random = 0.0348
+  3 layers: Pretrained = 0.0268, Random = 0.9026
+  4 layers: Pretrained = 0.0275, Random = 0.9026
+
+2. Effect of Hidden Layer Size
+----------------------------
+  100 neurons: Pretrained = 0.0365, Random = 0.0340
+  300 neurons: Pretrained = 0.0240, Random = 0.8972
+  500 neurons: Pretrained = 0.0211, Random = 0.8991
+  700 neurons: Pretrained = 0.0190, Random = 0.8972
+
+3. Effect of Training Data Size
+-----------------------------
+  1000 samples: Pretrained = 0.6042, Random = 0.9026
+  3000 samples: Pretrained = 0.1496, Random = 0.8990
+  7000 samples: Pretrained = 0.0795, Random = 0.6873
+  10000 samples: Pretrained = 0.0654, Random = 0.3437
+  30000 samples: Pretrained = 0.0373, Random = 0.0609
+  60000 samples: Pretrained = 0.0270, Random = 0.0350
